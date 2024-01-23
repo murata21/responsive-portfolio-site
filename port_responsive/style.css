@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/*CABEÇALHO*/
+
+.cabecalho{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background-color: rgb(65, 65, 62);
+    width: 100%;
+    padding: 20px 38px;
+    height: 8vh;
+}
+
+.logo{
+    width: 75%;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-between; 
+    width: 25%;
+}
+
+.listas ul{
+    list-style: none;
+}
+
+.listas a{
+    text-decoration: none;
+    color: white;
+}
+
+.listas a:hover{
+    color: #b6b6b6ad;
+}
+
+/*PRINCIPAL*/
+
+.main {
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url(images/programador.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.textos{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.textos h1{
+    font-size: 60px;
+    font-weight: 999;
+    color: white;
+}
+
+.textos span{
+    display: block;
+    color: rgb(255, 255, 255);
+}
+
+.textos p{
+    color: blue;
+    font-size: 25PX;
+    font-weight: 999;
+}
+
+.textos button{
+    margin-top: 10px;
+    height: 30px;
+    width: 150px;
+    border-radius: 30px;
+    background-color:inherit ;
+    color: white;
+    transition: 0.6s;
+}
+
+.textos button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/*SOBRE*/
+
+.sobre{
+    box-shadow: 1px 0 10px 1px white;
+    height: 46vh;
+    max-height: 46vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.938);
+}
+
+.texto-sobre{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    padding: 40px;
+}
+
+.texto-sobre p{
+    padding-top: 40px;
+    text-align: justify;
+}
+
+.imagem-sobre{
+    width: 30%;
+}
+
+.imagem-sobre img{
+    width: 100%;
+    filter: grayscale(10);
+    transition: 0.4s;
+    height: 98%;
+    max-height: 98%;
+}
+
+.imagem-sobre img:hover{
+    filter: grayscale(0);
+}
+
+/*PROJETOS*/
+
+.projetos{
+    box-shadow: 1px 0 10px 1px white;
+    height: 91vh;
+    max-height: 91vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.938);
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.textos-projetos h1{
+    padding: 60px;
+    font-size: 30px;
+    color: white;
+}
+
+.imagens-projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:8px;
+}
+
+.imagens-projetos img:hover{
+    filter: grayscale(0);
+    scale: 1.3;
+}
+
+.imagens-projetos img{
+    filter: grayscale(999);
+    padding: 30px;
+    height: 100%;
+    min-height: 100%;
+    width: 400px;
+    transition: 0.6s;
+}
+
+@media (max-width:1340px) {
+    /*header*/
+    .cabecalho{
+        position: fixed;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        background-color: rgb(65, 65, 62);
+        width: 100%;    
+        height: 8vh;
+        justify-content: space-between
+    }
+    
+    .logo img{
+        width: 40px;
+    }
+
+    .logo{
+        width: 0;
+    }
+
+    .listas{
+        display: flex;
+        padding: 35px;
+        width: 95%;
+        
+    }
+    
+    .listas ul{
+        list-style: none;
+    }
+    
+    .listas a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .listas a:hover{
+        color: #b6b6b6ad;
+    }
+
+    .main {
+        height: 100vh;
+        max-height: 100vh;
+        width: 100%;
+        background-color: black;
+        background-image: url(images/programador.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .textos{
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 10%;
+    }
+    
+    .textos h1{
+        font-size: 60px;
+        font-weight: 999;
+        color: white;
+    }
+    
+    .textos span{
+        display: block;
+        color: rgb(255, 255, 255);
+    }
+    
+    .textos p{
+        color: blue;
+        font-size: 25PX;
+        font-weight: 999;
+    }
+    
+    .textos button{
+        margin-top: 10px;
+        height: 30px;
+        width: 150px;
+        border-radius: 30px;
+        background-color:inherit ;
+        color: white;
+        transition: 0.6s;
+    }
+    
+    .textos button:hover{
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transform: scale(1.1);
+    }
+    /*sobre*/
+    .sobre{
+        box-shadow: 1px 0 10px 1px white;
+        height: 100vh;
+        max-height: 100vh;
+        width: 100%;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.938);
+        flex-direction: column;
+    }
+    
+    .texto-sobre{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 60px;
+    }
+    
+    .texto-sobre p{
+        padding-top: 40px;
+        text-align: justify;
+    }
+    
+    .imagem-sobre{
+        width: 100%;
+    }
+    
+    .imagem-sobre img{
+        width: 100%;
+        filter: grayscale(10);
+        transition: 0.4s;
+        height: 98%;
+        max-height: 98%;
+    }
+    
+    .imagem-sobre img:hover{
+        filter: grayscale(0);
+    }
+
+    /*PROJETOS*/
+
+    .projetos{
+        box-shadow: 1px 0 10px 1px white;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.938);
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        padding-bottom: 1000px;
+    }
+    
+    .textos-projetos h1{
+        padding: 20px;
+        font-size: 30px;
+        color: white;
+    }
+    
+    .imagens-projetos{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }   
+    
+    .imagens-projetos img:hover{
+        filter: grayscale(0);
+        scale: 1.1;
+    }
+    
+    .imagens-projetos img{
+        filter: grayscale(999);
+        padding: 20px;
+        height: 30%;
+        min-height: 20%;
+        width: 100%;
+        transition: 0.6s;
+    }
+
+}
